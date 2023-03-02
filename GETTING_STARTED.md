@@ -43,7 +43,7 @@ With [Foundry](https://github.com/foundry-rs/foundry), all tests are written in 
 
 Create a test file for your contract in the `test/` directory.
 
-For example, [`src/Greeter.sol`](./src/Greeter.sol) has its test file defined in [`./test/Greeter.t.sol`](./test/Greeter.t.sol).
+For example, [`src/TwoTimesFourIsEight.sol`](./src/TwoTimesFourIsEight.sol) has its test file defined in [`./test/TwoTimesFourIsEight.t.sol`](./test/TwoTimesFourIsEight.t.sol).
 
 To learn more about writing tests in Solidity for Foundry, reference Rari Capital's [solmate](https://github.com/Rari-Capital/solmate/tree/main/src/test) repository created by [@transmissions11](https://twitter.com/transmissions11).
 

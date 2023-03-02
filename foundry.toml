@@ -5,4 +5,13 @@
 [profile.default]
 solc_version = '0.8.17'
 auto_detect_solc = false
-optimizer_runs = 1_000
+optimizer_runs = 1_000_000
+verbosity = 1
+
+# Extreme Fuzzing CI Profile :P
+[profile.ci]
+fuzz_runs = 100_000
+verbosity = 4
+
+[rpc_endpoints]
+mainnet = "https://eth-mainnet.g.alchemy.com/v2/hvzAMYtUqrct8UnhHpi5tqPiAodbf-OP"

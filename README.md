@@ -35,9 +35,9 @@ lib
 scripts
 ├─ Deploy.s.sol — Example Contract Deployment Script
 src
-├─ Greeter — Example Contract
+├─ TwoTimesFourIsEight — Example Contract
 test
-└─ Greeter.t — Example Contract Tests
+└─ TwoTimesFourIsEight.t — Example Contract Tests
 ```
 
 
