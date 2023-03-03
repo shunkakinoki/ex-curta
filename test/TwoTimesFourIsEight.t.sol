@@ -14,10 +14,10 @@ contract TwoTimesFourIsEightTest is Test {
         seed = puzzle.generate(gen);
     }
 
-    function testSetGm() external {
+    function test_fuzz_gm(uint256 gen) external {
         string memory name;
         name = puzzle.name();
         console.log(seed);
-        console.log(puzzle.verify(seed, 0x1));
+        assert(!puzzle.verify(seed, gen));
     }
 }
