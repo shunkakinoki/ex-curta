@@ -21,7 +21,7 @@ contract F1A9Test is Test {
     }
 
     function test_roll() external {
-        for (uint256 i = 0; i < 300; i++) {
+        for (uint256 i = 0; i < 10000; i++) {
             vm.roll(16789519 + i);
             seed = puzzle.generate(gen);
             console.log(block.number);
