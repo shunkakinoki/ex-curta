@@ -12,9 +12,10 @@ import {IPuzzle} from "src/IPuzzle.sol";
 contract F1A9Script is Script {
     function run() external {
         vm.startBroadcast();
-        bytes32 salt = 0x0fe13f1eaac766c3bcd13db0eee51b4ac34f01ad17cbf746fb756f3fe2c842e4;
+        bytes32 salt = 0xc63790430ceb6464a312e8d6a4abd40c4331216454ed8c835d284082c9490c70;
         // uint256 salt = 4286601748635615094232218652219162031844775069769918281771736215745878049444;
         // F1A9Sol Sol = new F1A9Sol{salt: bytes32(salt)}();
-        F1A9Sol Sol = new F1A9Sol{salt: bytes32(salt)}();
+        F1A9Sol Sol = new F1A9Sol{salt: salt}();
+        // F1A9Sol Sol = new F1A9Sol();
     }
 }
