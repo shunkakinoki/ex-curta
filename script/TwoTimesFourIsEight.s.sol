@@ -11,6 +11,19 @@ import {IPuzzle} from "src/IPuzzle.sol";
 contract TwoTimesFourIsEightScript is Script {
     // /// @notice The main script entrypoint
     // function run() external {
+    //     ICurta curta = ICurta(0x0000000006bC8D9e5e9d436217B88De704a9F307);
+    //     console.log(curta.name());
+    //     (
+    //         IPuzzle puzzle,
+    //         uint40 addedTimestamp,
+    //         uint40 firstSolveTimestamp
+    //     ) = curta.getPuzzle(2);
+    //     console.log(puzzle.name());
+    //     console.log(
+    //         puzzle.generate(0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed)
+    //     );
+    // }
+    // function run() external {
     //     ICurta curta = ICurta(0x00000000eCf2b58C296B47caC8C51467c0e307cE);
     //     console.log(curta.name());
     //     (
@@ -19,25 +32,11 @@ contract TwoTimesFourIsEightScript is Script {
     //         uint40 firstSolveTimestamp
     //     ) = curta.getPuzzle(1);
     //     console.log(puzzle.name());
-    //     console.log(
-    //         puzzle.generate(0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed)
+    //     vm.roll(16737572);
+    //     vm.prank(address(0x58593392d72A9D90b133e1C8ecEec581C354687f));
+    //     curta.solve(
+    //         1,
+    //         6573214814286735824756133615847227814356536472817832156441563827
     //     );
     // }
-
-    function run() external {
-        ICurta curta = ICurta(0x00000000eCf2b58C296B47caC8C51467c0e307cE);
-        console.log(curta.name());
-        (
-            IPuzzle puzzle,
-            uint40 addedTimestamp,
-            uint40 firstSolveTimestamp
-        ) = curta.getPuzzle(1);
-        console.log(puzzle.name());
-        vm.roll(16737572);
-        vm.prank(address(0x58593392d72A9D90b133e1C8ecEec581C354687f));
-        curta.solve(
-            1,
-            6573214814286735824756133615847227814356536472817832156441563827
-        );
-    }
 }
