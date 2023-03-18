@@ -18,13 +18,13 @@ contract F1A9Test is Test {
 
     function test_deployed() external {
         bytes32 sh = bytes32(uint256(1));
-        uint8 sv = uint8(2);
+        uint8 sv = uint8(27);
         bytes32 sr = bytes32(uint256(3));
 
         bytes memory params = abi.encode(sh, sv, sr);
 
         address target = address(
-            new Deployer(hex"60016000526002602052600360405260606000F3")
+            new Deployer(hex"6001600052601b602052600360405260606000F3")
         );
         (, bytes memory ret) = target.staticcall("");
 
@@ -33,8 +33,8 @@ contract F1A9Test is Test {
             (bytes32, uint8, bytes32)
         );
 
-        assertEq(sh, h);
-        assertEq(sv, v);
-        assertEq(sr, r);
+        assertEq(h, sh);
+        assertEq(v, sv);
+        assertEq(r, sr);
     }
 }
