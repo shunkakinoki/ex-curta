@@ -1,7 +1,7 @@
 ### 3. TinySig
 
 ```sh
-huffc src/TinySig.huff --bytecode
+eas src/TinySig.etk src/TinySig.hex
 ```
 
 ### 2. F1A9

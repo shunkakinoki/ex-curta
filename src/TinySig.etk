@@ -1,0 +1,12 @@
+push1 1
+push1 0
+mstore
+push1 27
+push1 32
+mstore
+push1 3
+push1 64
+mstore
+push1 96 
+push1 0
+return

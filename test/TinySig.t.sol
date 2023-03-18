@@ -24,7 +24,7 @@ contract F1A9Test is Test {
         bytes memory params = abi.encode(sh, sv, sr);
 
         address target = address(
-            new Deployer(hex"6001600052601b602052600360405260606000F3")
+            new Deployer(hex"6001600052601b602052600360405260606000f3")
         );
         (, bytes memory ret) = target.staticcall("");
 
