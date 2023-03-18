@@ -1,4 +1,10 @@
-2. F1A9
+### 3. TinySig
+
+```sh
+huffc src/TinySig.huff --bytecode
+```
+
+### 2. F1A9
 
 ## Deployed address
 ```sh
