@@ -5,6 +5,15 @@ name = "pypi"
 
 [packages]
 halmos = "*"
+ecdsa = "*"
+eth-account = "*"
+eth-utils = "*"
+pycoin = "*"
+pycryptodome = "*"
+coincurve = "*"
+libnum = "*"
+cryptography = "*"
+fastecdsa = "*"
 
 [dev-packages]
 

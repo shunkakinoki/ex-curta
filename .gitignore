@@ -16,3 +16,4 @@ broadcast
 # Ignore local misc files
 .DS_Store
 *.pem
+node_modules

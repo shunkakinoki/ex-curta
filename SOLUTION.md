@@ -1,7 +1,26 @@
 ### 3. TinySig
 
+https://cryptobook.nakov.com/digital-signatures/ecdsa-sign-verify-examples
+https://m.youtube.com/watch?v=6TI5YOpnrgI&embeds_euri=https%3A%2F%2Fwww.hypr.com%2F&source_ve_path=MjM4NTE&feature=emb_title
+https://bitcoin.stackexchange.com/questions/38351/ecdsa-v-r-s-what-is-v
+https://www.instructables.com/Understanding-how-ECDSA-protects-your-data/?amp_page=true
+https://asecuritysite.com/encryption/ecd2
+https://cryptodeeptech.ru/shortest-ecdsa-signature/
+
 ```sh
 eas src/TinySig.etk src/TinySig.hex
+```
+
+```sh
+cast call 0x000000000045E5418329Ee1F6D07Dc6E73ad0AB0 "curtaPlayer()"
+```
+
+```sh
+forge script script/TinySig.s.sol --broadcast -f $ETH_RPC_URL --tx-origin 0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed
+```
+
+```sh
+forge script script/TinySig.s.sol --broadcast -f $ETH_RPC_URL --tx-origin 0x79d31bfca5fda7a4f15b36763d2e44c99d811a6c
 ```
 
 ### 2. F1A9
