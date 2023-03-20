@@ -18,6 +18,20 @@ contract F1A9Test is Test {
         console.log(seed);
     }
 
+    function test_fork() external {
+        string memory MAINNET_RPC_URL = vm.envString("MAINNET_RPC_URL");
+        uint256 mainnetFork = vm.createSelectFork(MAINNET_RPC_URL);
+        ICurta curta = ICurta(0x0000000006bC8D9e5e9d436217B88De704a9F307);
+
+        vm.prank(0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed);
+        curta.solve(
+            3,
+            0x586060808280806e45e5418329ee1f6d07dc6e73ad0ab05afa5090f300000000
+            // 0x6000808080806ea4c4466c164f2cc5b89a3f835803385afa3d82803e3d82f300
+            // 0x586060808280806e45e5418329ee1f6d07dc6e73ad0ab05afa5090f300000000
+        );
+    }
+
     // function test_fork() external {
     //     string memory MAINNET_RPC_URL = vm.envString("MAINNET_RPC_URL");
     //     uint256 mainnetFork = vm.createSelectFork(MAINNET_RPC_URL);
