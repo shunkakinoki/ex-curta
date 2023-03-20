@@ -7,6 +7,8 @@ https://www.instructables.com/Understanding-how-ECDSA-protects-your-data/?amp_pa
 https://asecuritysite.com/encryption/ecd2
 https://cryptodeeptech.ru/shortest-ecdsa-signature/
 
+https://asecuritysite.com/sage/sage08
+
 ```sh
 eas src/TinySig.etk src/TinySig.hex
 ```
